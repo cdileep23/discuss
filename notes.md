@@ -69,3 +69,39 @@ prisma adaptor is used to create a row in acoount when a new user sign in
 
  step-2
  
+ es, modern applications increasingly use NextAuth.js (or similar authentication providers) instead of manually handling passwords. Here's why:
+
+🔥 Why Modern Apps Use NextAuth.js Instead of Manual Passwords
+1️⃣ Security 🔒
+
+OAuth providers like GitHub, Google, and Discord handle authentication securely.
+Avoids password leaks, brute-force attacks, and hashing vulnerabilities.
+2️⃣ User Convenience 🚀
+
+No need to remember passwords – users sign in with Google, GitHub, etc.
+Faster login experience with Single Sign-On (SSO).
+3️⃣ Built-in Session Management 🔄
+
+Handles JWT or database sessions automatically.
+No need to manually create, validate, or expire tokens.
+4️⃣ Supports Multiple Providers Easily 🌎
+
+GitHub, Google, Facebook, Twitter, Discord, etc.
+Adding new providers is just a few lines of code.
+5️⃣ Secure Database Storage with Prisma 🛠️
+
+Prisma stores user accounts, tokens, and sessions securely.
+No need to manually manage user authentication tables.
+🚀 Modern Apps Using NextAuth.js:
+✅ SaaS Apps – No manual password management, just OAuth.
+✅ E-commerce Sites – Users log in via Google, Facebook, etc.
+✅ Job Portals – LinkedIn, GitHub login simplifies onboarding.
+✅ Gaming & Tournament Platforms – Discord/Twitch logins for seamless entry.
+
+🔄 When to Use Manual Authentication?
+You might still use manual authentication if:
+
+You need custom authentication logic (e.g., role-based access control).
+You require phone number authentication (OTP-based login).
+Your users don’t have third-party accounts (like Google, GitHub, etc.).
+You're implementing enterprise authentication (SSO, LDAP, etc.).
